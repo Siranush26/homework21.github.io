@@ -224,3 +224,34 @@ input{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+@media only screen and (max-width: 400px) {
+
+   #button{
+    margin-left:60px;
+   }
+
+   #login{
+    margin-left:60px;  
+   }
+   #container{
+       width:100%;
+       display:flex;
+       flex-wrap: wrap;
+       
+   }
+
+   .lam{
+       margin-left:100px;
+
+   }
+
+   #new{
+    margin-left:50px; 
+   }
+
+   #button2{
+    margin-left:60px; 
+   }
+  } 
