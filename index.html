@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Homework</h1>
+
+    <h4>1)Ստեղծել մեկ հատ div ` «մուտք», կողքը մի փոքր եռանկյուն կոճակ, կոճակին կամ div-ին սեղմելիս պիտի հայտնվի մուտքի ֆորմա, երկրորդ անգամ սեղմելիս այդ պիտի ֆորման անհայտանա։</h4>
+
+    <button type="button" id="button" onclick="toggleButton()">Մուտք<img id="top" src="./img/icons8-сортировать-по-убыванию-30.png"></button>   
+    <div id="login">    
+        <form >      
+            <input type="login" name="Uname" id="name" placeholder="Լոգին">    
+            <br><br>         
+            <input type="Password" name="Pass" id="Pass" placeholder="Գաղտնաբառ">    
+            <br><br>  
+            <button type="button"  id="ok" >Օկ</button>
+             
+        </form>  
+    
+    </div> 
+    <h4 class="top_for_task">2)Ունենալ մի հատ լամպի նկար, վրան սեղմելուց հետո լույսը միանա</h4>
+    <div id="container">
+<img id="new" src="./img/img_559817.png" alt="picture" onclick="lamp()">
+
+<div class="lam" onclick="lamp2()"></div>
+</div>
+
+<h4 class="top_for_task">3)Now անունով button, որի վրա սեղմելուց հայտնվի տվյալ պահի ամսաթիվը հետևյալ ֆորմատով՝ 
+    DD Mon, YYYY / Day with leading zeros, Month abbreviation, Year (17 Feb, 2014)</h4>
+
+    <button type="button" id="button2" onclick="date()">Now</button>
+    <p id="day"></p>
+
+
+
+    <h4 class="top_for_task">4)Ստեղծել նկարների սլայդեր </h4>
+
+    <div class="slideshow-container">
+
+       
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./img/1627377451_nature-1600x900.jpg" style="width:100%">
+          <div class="text">Tree of life</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./img/infoVivantes-agriculture-nature.jpg" style="width:100%">
+          <div class="text">World</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./img/nature-3289812_1280_0.jpeg" style="width:100%">
+          <div class="text">Magic</div>
+        </div>
+      
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+   
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
